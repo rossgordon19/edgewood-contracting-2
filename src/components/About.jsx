@@ -1,28 +1,31 @@
-import React from 'react';
-import CraigKenney from '../assets/CraigKenney.png';
-import Insured from '../assets/l&i.png';
+import React from "react";
+import CraigKenney from "../assets/CraigKenney.png";
+import Insured from "../assets/l&i.png";
 
 const About = () => {
   const reasons = [
     {
       id: 1,
-      title: 'Local Expertise',
-      description: 'Based in Richmond, VA, we are intimately familiar with the unique needs and challenges faced by homes in the greater Richmond area.'
+      title: "Local Expertise",
+      description:
+        "Based in Richmond, VA, we are intimately familiar with the unique needs and challenges faced by homes in the greater Richmond area.",
     },
     {
       id: 2,
-      title: 'Versatility',
-      description: 'From carpentry and light electrical work to furniture building and gutter cleaning, we\'re equipped to handle a wide range of repair services.'
+      title: "Versatility",
+      description:
+        "From carpentry and light electrical work to furniture building and gutter cleaning, we're equipped to handle a wide range of repair services.",
     },
     {
       id: 3,
-      title: 'Professionalism',
-      description: 'We pride ourselves on our high standards of professionalism, ensuring every job is completed to the satisfaction of our customers.'
-    }
+      title: "Professionalism",
+      description:
+        "We pride ourselves on our high standards of professionalism, ensuring every job is completed to the satisfaction of our customers.",
+    },
   ];
 
   return (
-    <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+    <div id="about" className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
       <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
         <div className="w-full lg:max-w-lg lg:flex-auto">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -39,9 +42,9 @@ const About = () => {
           />
         </div>
         <div className="w-full lg:max-w-xl lg:flex-auto flex flex-col items-center">
-          <img 
-            src={Insured} 
-            alt="Placeholder" 
+          <img
+            src={Insured}
+            alt="Placeholder"
             className="hidden md:block w-[75%] h-[75%] mb-4 rounded-lg object-cover"
           />
           <h3 className="sr-only">Reasons to Choose Us</h3>

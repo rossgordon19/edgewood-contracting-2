@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-scroll';
 
 const navigation = [
   { name: 'About', href: 'about' },
@@ -10,6 +11,10 @@ const navigation = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="bg-[#3f5d49] text-[#f5f2e9]">
@@ -34,13 +39,15 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-white relative border-b-2 border-transparent md:hover:border-white md:pb-1"
+              to={item.href}
+              smooth={true}
+              duration={500}
+              className="text-sm font-semibold leading-6 text-white relative border-b-2 border-transparent md:hover:border-white md:pb-1 cursor-pointer"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </nav>
@@ -53,7 +60,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#3f5d49] text-[#f5f2e9] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <h1>Edgewood Contracting</h1>
             </a>
             <button
@@ -69,13 +76,16 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f5f2e9] md:border-b-2 md:border-transparent md:hover:border-white md:pb-1"
+                    to={item.href}
+                    smooth={true}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f5f2e9] md:border-b-2 md:border-transparent md:hover:border-white md:pb-1 cursor-pointer"
+                    onClick={closeMobileMenu}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
