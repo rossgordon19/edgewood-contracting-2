@@ -1,4 +1,6 @@
+import React from 'react';
 import Logo from "../assets/green.png";
+import { Link } from 'react-scroll';
 
 export default function Hero() {
   return (
@@ -22,12 +24,14 @@ export default function Hero() {
                   exceptional quality for all your home needs.
                 </p>
                 <div className="mt-8 flex items-center gap-x-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
                     className="rounded-md bg-[#f5f2e9] px-3.5 py-2.5 text-sm font-semibold text-black border border-black shadow-sm hover:bg-black hover:border-white hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     Get a Free Estimate
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
