@@ -46,6 +46,7 @@ export default function Navbar() {
               smooth={true}
               duration={500}
               className="text-sm font-semibold leading-6 text-white relative border-b-2 border-transparent md:hover:border-white md:pb-1 cursor-pointer"
+              aria-label={`Scroll to ${item.name}`}
             >
               {item.name}
             </Link>
