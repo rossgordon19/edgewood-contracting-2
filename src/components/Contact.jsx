@@ -24,7 +24,8 @@ export default function Contact() {
           name="accessKey"
           value="1217782b-9c19-421c-8df2-dadf6982a63f"
         />
-        <input type="hidden" name="redirectTo" value="https://google.com" />
+        {/* Change redirect to https://edgewoodcontracting.com before deploying */}
+        <input type="hidden" name="redirectTo" value="https://merry-figolla-474f54.netlify.app/" />
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           {/* First Name */}
           <div>

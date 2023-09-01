@@ -2,48 +2,48 @@ import React from 'react';
 
 const services = [
   {
-    name: 'Dummy Service 1',
-    description: 'This is a dummy description for service 1.',
+    name: 'Common Household Needs & Door Services',
+    description: 'We offer a variety of services including flooring repair, deck repair, storm door installation, and lock repair.',
   },
   {
-    name: 'Dummy Service 2',
-    description: 'This is a dummy description for service 2.',
+    name: 'Light Electrical',
+    description: 'From light-switch and outlet replacement to fixture replacement, we handle all your minor electrical needs.',
   },
   {
-    name: 'Dummy Service 3',
-    description: 'This is a dummy description for service 3.',
+    name: 'Light Plumbing',
+    description: 'We specialize in faucet repairs, toilet repair and replacement, and more.',
   },
   {
-    name: 'Dummy Service 4',
-    description: 'This is a dummy description for service 4.',
+    name: 'Gutter Cleaning',
+    description: 'Annual cleaning and inspection of gutters and downspouts to prevent damage.',
   },
   {
-    name: 'Dummy Service 5',
-    description: 'This is a dummy description for service 5.',
+    name: 'Dryer Vent Cleaning',
+    description: 'Annual inspection and cleaning of dryer exhaust vents to prevent blockages and fire hazards.',
   },
   {
-    name: 'Dummy Service 6',
-    description: 'This is a dummy description for service 6.',
+    name: 'TV Mounting',
+    description: 'Years of experience in sturdy TV mounting you can trust.',
   },
   {
-    name: 'Dummy Service 7',
-    description: 'This is a dummy description for service 7.',
+    name: 'Painting',
+    description: 'From interiors to exteriors, our painting experience has got you covered.',
   },
   {
-    name: 'Dummy Service 8',
-    description: 'This is a dummy description for service 8.',
+    name: 'Appliance Installation and Repair',
+    description: 'Expertise in repairing existing appliances and installing new ones as needed.',
   },
   {
-    name: 'Dummy Service 9',
-    description: 'This is a dummy description for service 9.',
-  },
+    name: 'Additional Household Needs',
+    description: 'Weatherproofing windows/doors, drywall repair, and window and door trim services.',
+  }
 ];
 
 const Services = () => {
   return (
     <div
       id="services"
-      className="mx-auto mt-32 max-w-7xl px-6 pb-[75px] sm:mt-40 lg:px-8" // Added pt-[25px] and pb-[25px] for custom padding
+      className="mx-auto mt-32 max-w-7xl px-6 pb-[75px] sm:mt-40 lg:px-8"
     >
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
