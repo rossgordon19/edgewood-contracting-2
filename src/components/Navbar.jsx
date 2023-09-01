@@ -18,7 +18,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-[#3f5d49] text-[#f5f2e9]">
+    <header
+      className={`bg-[#3f5d49] text-[#f5f2e9] ${
+        mobileMenuOpen ? "" : "sticky top-0 z-50"
+      }`}
+    >
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -40,16 +44,22 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              smooth={true}
-              duration={500}
-              className="text-sm font-semibold leading-6 text-white relative border-b-2 border-transparent md:hover:border-white md:pb-1 cursor-pointer"
-              aria-label={`Scroll to ${item.name}`}
-            >
-              {item.name}
-            </Link>
+            <>
+              <Link
+                key={item.name}
+                to={item.href}
+                smooth={true}
+                duration={500}
+                offset={-95}
+                className="text-sm font-semibold leading-6 text-white relative border-b-2 border-transparent md:hover:border-white md:pb-1 cursor-pointer"
+              >
+                {item.name}
+              </Link>
+              {/* Hidden anchor tag for SEO */}
+              <a href={`#${item.href}`} className="sr-only">
+                {item.name}
+              </a>
+            </>
           ))}
         </div>
       </nav>
@@ -68,7 +78,7 @@ export default function Navbar() {
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-[#f5f2e9]"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={closeMobileMenu}
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -83,6 +93,7 @@ export default function Navbar() {
                     to={item.href}
                     smooth={true}
                     duration={500}
+                    offset={-95}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f5f2e9] md:border-b-2 md:border-transparent md:hover:border-white md:pb-1 cursor-pointer"
                     onClick={closeMobileMenu}
                   >

@@ -39,10 +39,15 @@ const Footer = () => {
                 to={item.href}
                 smooth={true}
                 duration={500}
+                offset={-95}
                 className="text-sm leading-6 hover:text-[#d1c6b8]"
               >
                 {item.name}
               </Link>
+              {/* Hidden anchor tag for SEO */}
+              <a href={`#${item.href}`} className="sr-only">
+                {item.name}
+              </a>
             </div>
           ))}
         </nav>

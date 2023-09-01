@@ -32,6 +32,10 @@ export default function Hero() {
                   >
                     Get a Free Estimate
                   </Link>
+                  {/* Hidden anchor tag for SEO */}
+                  <a href="#contact" className="sr-only">
+                    Get a Free Estimate
+                  </a>
                 </div>
               </div>
             </div>
