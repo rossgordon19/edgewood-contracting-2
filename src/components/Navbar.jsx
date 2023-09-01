@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-scroll';
+import React, { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-scroll";
+import Logo from "../assets/EC logo.png";
 
 const navigation = [
-  { name: 'About', href: 'about' },
-  { name: 'Services', href: 'services' },
-  { name: 'Contact', href: 'contact' },
+  { name: "About", href: "about" },
+  { name: "Services", href: "services" },
+  { name: "Contact", href: "contact" },
 ];
 
 export default function Navbar() {
@@ -24,7 +25,7 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <h1>LOGO GOES HERE</h1>
+            <img className="h-12 w-auto" src={Logo} alt="Your Company" />
           </a>
         </div>
         <div className="flex lg:hidden">
