@@ -20,7 +20,7 @@ export default function Hero() {
                 </h1>
                 <p className="mt-4 text-lg leading-8">
                   Over a decade of trusted home repair services in Richmond, VA.
-                  We're licensed, insured, and committed to delivering
+                  We're qualified, insured, and committed to delivering
                   exceptional quality for all your home needs.
                 </p>
                 <div className="mt-8 flex items-center gap-x-6">
