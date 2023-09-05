@@ -1,58 +1,58 @@
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-scroll';
-import Craig from '../assets/CraigKenney.png';
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-scroll";
+import Craig from "../assets/CraigKenney.png";
 
-import Logo from '../assets/green.png';
+import Logo from "../assets/green.png";
 
 const navigation = [
-  { name: 'About', href: 'about' },
-  { name: 'Services', href: 'services' },
-  { name: 'Contact', href: 'contact' },
+  { name: "About", href: "about" },
+  { name: "Services", href: "services" },
+  { name: "Contact", href: "contact" },
 ];
 
 const services = [
   {
-    name: 'Carpentry Work',
-    description: 'We provide expert carpentry services.',
+    name: "Carpentry Work",
+    description: "We provide expert carpentry services.",
   },
   {
-    name: 'Light Electrical Work',
-    description: 'Expert solutions for light electrical needs.',
+    name: "Light Electrical Work",
+    description: "Expert solutions for light electrical needs.",
   },
   {
-    name: 'Light Plumbing Work',
-    description: 'Your go-to for light plumbing work.',
+    name: "Light Plumbing Work",
+    description: "Your go-to for light plumbing work.",
   },
-  { name: 'Painting', description: 'High-quality painting services.' },
-  { name: 'Drywall Repair', description: 'Professional drywall repair.' },
+  { name: "Painting", description: "High-quality painting services." },
+  { name: "Drywall Repair", description: "Professional drywall repair." },
   {
-    name: 'Door & Lock Repair',
-    description: 'Secure and effective door & lock repair.',
+    name: "Door & Lock Repair",
+    description: "Secure and effective door & lock repair.",
   },
-  { name: 'Window Repair', description: 'Quick and reliable window repair.' },
-  { name: 'TV Mounting', description: 'Efficient TV mounting services.' },
+  { name: "Window Repair", description: "Quick and reliable window repair." },
+  { name: "TV Mounting", description: "Efficient TV mounting services." },
   {
-    name: 'Furniture Building',
-    description: 'Customized furniture building services.',
+    name: "Furniture Building",
+    description: "Customized furniture building services.",
   },
   {
-    name: 'Gutter Cleaning',
-    description: 'Efficient gutter cleaning services.',
+    name: "Gutter Cleaning",
+    description: "Efficient gutter cleaning services.",
   },
 ];
 
 const footerNavigation = {
   main: [
-    { name: 'About', href: 'about' },
-    { name: 'Services', href: 'services' },
-    { name: 'Contact', href: 'contact' },
+    { name: "About", href: "about" },
+    { name: "Services", href: "services" },
+    { name: "Contact", href: "contact" },
   ],
   social: [
     {
-      name: 'Phone',
-      href: 'tel:+123456789',
+      name: "Phone",
+      href: "tel:+123456789",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M5.391 0c-2.982 0-5.39 2.408-5.39 5.391v13.217c0 2.984 2.408 5.392 5.391 5.392h13.217c2.984 0 5.391-2.408 5.391-5.391v-13.218c0-2.984-2.408-5.391-5.391-5.391h-13.217zM18.913 19.565c0 0.662-0.538 1.2-1.201 1.2h-10.823c-0.663 0-1.2-0.538-1.2-1.2v-11.652c0-0.663 0.538-1.201 1.2-1.201h10.823c0.663 0 1.201 0.538 1.201 1.201v11.652z"></path>
@@ -61,8 +61,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Mail',
-      href: 'mailto:info@example.com',
+      name: "Mail",
+      href: "mailto:info@example.com",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M12 13.333l-12-8v-1.333h24v1.333l-12 8zM12 13.333l11.51-7.673-2.403 7.205-9.107 6.071-9.108-6.071-2.402-7.205 11.51 7.673zM21.438 13.64l-2.172 6.527c-0.173 0.52-0.677 0.833-1.266 0.833h-12c-0.589 0-1.093-0.313-1.266-0.833l-2.172-6.527 8.372 5.581c0.173 0.114 0.364 0.169 0.554 0.169s0.381-0.056 0.554-0.169l8.372-5.581z"></path>
@@ -70,8 +70,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: 'https://instagram.com/edgewoodcontractingrva',
+      name: "Instagram",
+      href: "https://instagram.com/edgewoodcontractingrva",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -217,7 +217,7 @@ export default function Page() {
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <div className="text-xl leading-8 text-gray-600">
                   <p className="mb-2">
-                    <span className="font-semibold">Local Expertise:</span>{' '}
+                    <span className="font-semibold">Local Expertise:</span>{" "}
                     Based in Richmond, VA, we are intimately familiar with the
                     unique needs and challenges faced by homes in the greater
                     Richmond area.
@@ -255,9 +255,9 @@ export default function Page() {
           className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8"
         >
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Our Services
-            </h2>
+            </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Your home deserves the best. Don't settle for less—get in touch
               with Edgewood Contracting LLC today to schedule your next home
@@ -317,4 +317,3 @@ export default function Page() {
     </div>
   );
 }
-

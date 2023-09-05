@@ -7,9 +7,9 @@ export default function Contact() {
       className="isolate bg-[#3f5d49] px-6 py-24 sm:py-32 lg:px-8 text-[#f5f2e9]"
     >
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Get in Touch With Us
-        </h2>
+        </h1>
         <p className="mt-2 text-lg leading-8">
           We'd love to hear from you. Fill out the form below to reach out.
         </p>
